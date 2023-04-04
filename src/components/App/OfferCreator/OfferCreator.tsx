@@ -14,6 +14,7 @@ import {
   Link,
   Button,
   CloseButton,
+  extendTheme,
 } from "@chakra-ui/react";
 
 const inputWrapperStyles = {
@@ -23,7 +24,7 @@ const inputWrapperStyles = {
 };
 
 const cardStyles = {
-  width: "250px",
+  width: { "2xl": "250px", lg: "200px" },
   height: "100%",
   bg: "#d9d9d9",
   flexShrink: "0",
@@ -35,13 +36,12 @@ const cardStylesCart = {
   bg: "#d9d9d9",
   flexDirection: "row",
   position: "relative",
-  minW: "300px",
 };
 
 const OfferCreator = () => {
   return (
     <div className="offer-creator">
-      <Box ml="auto" mr="auto" mt="25px" bg="transparent" pl="50px" pr="50px">
+      <Box ml="auto" mr="auto" mt="25px" bg="transparent" pl={{ "3xl": "50px", "2xl": "25px", sm: "10px" }} pr={{ "3xl": "50px", "2xl": "25px", sm: "10px" }}>
         <Heading as="h2" size="lg" mb="20px">
           Dane podstawowe
         </Heading>
@@ -76,14 +76,14 @@ const OfferCreator = () => {
           </Box>
         </Box>
       </Box>
-      <Box display="flex">
-        <Box ml="auto" mt="25px" width="100%" pl="50px">
+      <Box display="flex" flexDirection={{ xl: "row", sm: "column" }}>
+        <Box ml="auto" mt="25px" width={{ xl: "70%" }} pl={{ "3xl": "50px", "2xl": "25px", sm: "10px" }} pr={{ "3xl": "50px", "2xl": "25px", sm: "10px" }}>
           <Heading as="h2" size="lg" mb="20px">
             Wybór wykonawców
           </Heading>
-          <Box>
+          <Box width="100%">
             <Input mb="25px" type="text" placeholder="Wyszukaj wykonwacę" />
-            <Box width="1200px" overflowX="auto" display="flex" gap="20px">
+            <Box width="100%" height={{ "2xl": "350px", lg: "310px" }} overflowX="auto" display="flex" gap="20px">
               <Card sx={cardStyles}>
                 <CardBody>
                   <Image
@@ -213,7 +213,7 @@ const OfferCreator = () => {
             </Box>
           </Box>
         </Box>
-        <Box ml="auto" mr="auto" mt="25px" width="100%" pl="50px" pr="50px">
+        <Box ml="auto" mr="auto" mt="25px" width="100%" pr={{ "3xl": "50px", xl: "25px" }}>
           <Heading as="h2" size="lg" mb="20px">
             Koszyk wykonawców
           </Heading>
@@ -222,52 +222,49 @@ const OfferCreator = () => {
               <Card sx={cardStylesCart}>
                 <CardBody>
                   <CloseButton position="absolute" right="10px" top="10px" />
-                  <Heading as="h2" size="md" mb="20px">
+                  <Heading width="90%" as="h2" size="md" mb="5px">
                     Nazwa wykonwacy
                   </Heading>
                   <Text ml="10px" width="100%" lineHeight="1" height="50px" overflowY="auto">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam magnam laudantium fugit numquam nulla quo, esse blanditiis iusto
                     rerum veniam non tempora dignissimos soluta distinctio deleniti natus error. Asperiores. Lorem ipsum dolor sit amet consectetur adipisicing
                   </Text>
-                  <Text mt="25px" textAlign="right" fontWeight="500">
+                  <Text textAlign="right" fontWeight="500">
                     2000 PLN
                   </Text>
                 </CardBody>
-                <CardFooter></CardFooter>
               </Card>
               <Card sx={cardStylesCart}>
                 <CardBody>
                   <CloseButton position="absolute" right="10px" top="10px" />
-                  <Heading as="h2" size="md" mb="20px">
+                  <Heading width="90%" as="h2" size="md" mb="5px">
                     Nazwa wykonwacy
                   </Heading>
                   <Text ml="10px" width="100%" lineHeight="1" height="50px" overflowY="auto">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam magnam laudantium fugit numquam nulla quo, esse blanditiis iusto
                     rerum veniam non tempora dignissimos soluta distinctio deleniti natus error. Asperiores. Lorem ipsum dolor sit amet consectetur adipisicing
                   </Text>
-                  <Text mt="25px" textAlign="right" fontWeight="500">
+                  <Text textAlign="right" fontWeight="500">
                     2000 PLN
                   </Text>
                 </CardBody>
-                <CardFooter></CardFooter>
               </Card>
               <Card sx={cardStylesCart}>
                 <CardBody>
                   <CloseButton position="absolute" right="10px" top="10px" />
-                  <Heading as="h2" size="md" mb="20px">
+                  <Heading width="90%" as="h2" size="md" mb="5px">
                     Nazwa wykonwacy
                   </Heading>
-                  <Text width="100%" lineHeight="1" height="50px" overflowY="auto">
+                  <Text width="100%" ml="10px" lineHeight="1" height="50px" overflowY="auto">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam magnam laudantium fugit numquam nulla quo, esse blanditiis iusto
                     rerum veniam non tempora dignissimos soluta distinctio deleniti natus error. Asperiores. Lorem ipsum dolor sit amet consectetur adipisicing
                     elit. Molestias totam magnam laudantium fugit numquam nulla quo, esse blanditiis iusto rerum veniam non tempora dignissimos soluta
                     distinctio deleniti natus error. Asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam magnam laudantium
                   </Text>
-                  <Text ml="10px" mt="25px" textAlign="right" fontWeight="500">
+                  <Text textAlign="right" fontWeight="500">
                     2000 PLN
                   </Text>
                 </CardBody>
-                <CardFooter></CardFooter>
               </Card>
             </Box>
             <Text pt="25px" textAlign="right" fontSize="22px">
