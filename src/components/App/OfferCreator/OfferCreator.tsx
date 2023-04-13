@@ -15,6 +15,7 @@ import {
   Button,
   CloseButton,
   extendTheme,
+  StackDivider,
 } from "@chakra-ui/react";
 
 const inputWrapperStyles = {
@@ -215,6 +216,160 @@ const OfferCreator = () => {
                   </CardFooter>
                 </Card>
               </Box>
+            </Box>
+          </Box>
+          <Box ml="auto" mr="auto" mt="25px" width="100%" pl={{ xl: "10px", sm: "0px" }}>
+            <Heading as="h2" size="lg" mb="20px">
+              Koszyk wykonawców
+            </Heading>
+            <Box>
+              <Box width="100%" display="flex" flexDirection="column" gap="20px">
+                <Card sx={cardStylesCart}>
+                  <CardBody>
+                    <CloseButton position="absolute" right="10px" top="10px" />
+                    <Heading width="90%" as="h2" size="md" mb="5px">
+                      Nazwa wykonwacy
+                    </Heading>
+                    <Text ml="10px" width="100%" lineHeight="1" height="50px" overflowY="auto">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam magnam laudantium fugit numquam nulla quo, esse blanditiis iusto
+                      rerum veniam non tempora dignissimos soluta distinctio deleniti natus error. Asperiores. Lorem ipsum dolor sit amet consectetur
+                      adipisicing
+                    </Text>
+                    <Text textAlign="right" fontWeight="500">
+                      2000 PLN
+                    </Text>
+                  </CardBody>
+                </Card>
+                <Card sx={cardStylesCart}>
+                  <CardBody>
+                    <CloseButton position="absolute" right="10px" top="10px" />
+                    <Heading width="90%" as="h2" size="md" mb="5px">
+                      Nazwa wykonwacy
+                    </Heading>
+                    <Text ml="10px" width="100%" lineHeight="1" height="50px" overflowY="auto">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam magnam laudantium fugit numquam nulla quo, esse blanditiis iusto
+                      rerum veniam non tempora dignissimos soluta distinctio deleniti natus error. Asperiores. Lorem ipsum dolor sit amet consectetur
+                      adipisicing
+                    </Text>
+                    <Text textAlign="right" fontWeight="500">
+                      2000 PLN
+                    </Text>
+                  </CardBody>
+                </Card>
+                <Card sx={cardStylesCart}>
+                  <CardBody>
+                    <CloseButton position="absolute" right="10px" top="10px" />
+                    <Heading width="90%" as="h2" size="md" mb="5px">
+                      Nazwa wykonwacy
+                    </Heading>
+                    <Text width="100%" ml="10px" lineHeight="1" height="50px" overflowY="auto">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam magnam laudantium fugit numquam nulla quo, esse blanditiis iusto
+                      rerum veniam non tempora dignissimos soluta distinctio deleniti natus error. Asperiores. Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Molestias totam magnam laudantium fugit numquam nulla quo, esse blanditiis iusto rerum veniam non tempora dignissimos
+                      soluta distinctio deleniti natus error. Asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam magnam
+                      laudantium
+                    </Text>
+                    <Text textAlign="right" fontWeight="500">
+                      2000 PLN
+                    </Text>
+                  </CardBody>
+                </Card>
+              </Box>
+              <Text pt="25px" textAlign="right" fontSize="22px">
+                Suma: 6000zł
+              </Text>
+            </Box>
+          </Box>
+        </Box>
+        <Box display="flex" flexDirection={{ xl: "row", sm: "column" }}>
+          <Box ml="auto" mt="25px" width={{ xl: "70%", sm: "100%" }} flexShrink="0">
+            <Heading as="h2" size="lg" mb="20px">
+              Wybór techniki
+            </Heading>
+            <Input mb="25px" type="text" placeholder="Wyszukaj wykonwacę" />
+            <Box display="flex" flexDirection="column" gap="20px">
+              <Card direction="row" padding="16px" backgroundColor="lightGray">
+                <Image
+                  width="300px"
+                  height="300px"
+                  src="https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
+                  alt="Caffe Latte"
+                  mt="auto"
+                  mb="auto"
+                />
+                <Stack width="100%" height="100%">
+                  <CardBody>
+                    <Heading mb="10px" size="md">
+                      Nazwa techniki
+                    </Heading>
+                    <Box display="flex" mb="20px">
+                      <Box>
+                        <Text>Producent:</Text>
+                        <Text>Model:</Text>
+                        <Text>Waga:</Text>
+                        <Text>Wymiary:</Text>
+                      </Box>
+                      <Box ml="10px">
+                        <Text>XYZ</Text>
+                        <Text>XYZ</Text>
+                        <Text>XYZ</Text>
+                        <Text>XYZ</Text>
+                      </Box>
+                    </Box>
+                    <Text lineHeight="1" fontSize="20px">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati
+                      corporis aut similique libero possimus quod aspernatur officiis eos ducimus fuga soluta incidunt.
+                    </Text>
+                  </CardBody>
+
+                  <CardFooter>
+                    <Button ml="auto">Dodaj</Button>
+                  </CardFooter>
+                </Stack>
+              </Card>
+              <Card height="auto" direction="row" padding="16px" backgroundColor="lightGray">
+                <Image
+                  width="300px"
+                  height="300px"
+                  src="https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
+                  alt="Caffe Latte"
+                  mt="auto"
+                  mb="auto"
+                />
+                <Stack width="100%" height="100%">
+                  <CardBody>
+                    <Heading mb="10px" size="md">
+                      Nazwa techniki
+                    </Heading>
+                    <Box display="flex" mb="20px">
+                      <Box>
+                        <Text>Producent:</Text>
+                        <Text>Model:</Text>
+                        <Text>Waga:</Text>
+                        <Text>Wymiary:</Text>
+                      </Box>
+                      <Box ml="10px">
+                        <Text>XYZ</Text>
+                        <Text>XYZ</Text>
+                        <Text>XYZ</Text>
+                        <Text>XYZ</Text>
+                      </Box>
+                    </Box>
+                    <Text lineHeight="1" fontSize="20px">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati
+                      corporis aut similique libero possimus quod aspernatur officiis eos ducimus fuga soluta incidunt. Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati corporis aut similique libero possimus quod
+                      aspernatur officiis eos ducimus fuga soluta incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa pariatur
+                      debitis accusantium iure beatae nemo, obcaecati corporis aut similique libero possimus quod aspernatur officiis eos ducimus fuga soluta
+                      incidunt.
+                    </Text>
+                  </CardBody>
+
+                  <CardFooter>
+                    <Button ml="auto">Dodaj</Button>
+                  </CardFooter>
+                </Stack>
+              </Card>
             </Box>
           </Box>
           <Box ml="auto" mr="auto" mt="25px" width="100%" pl={{ xl: "10px", sm: "0px" }}>
