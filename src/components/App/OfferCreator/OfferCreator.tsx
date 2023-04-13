@@ -17,6 +17,7 @@ import {
   extendTheme,
   StackDivider,
 } from "@chakra-ui/react";
+import "./OfferCreator.css";
 
 const inputWrapperStyles = {
   width: { sm: "100%", lg: "45%", xl: "30%" },
@@ -32,6 +33,7 @@ const cardStyles = {
   height: "100%",
   bg: "#d9d9d9",
   flexShrink: "0",
+  padding: "16px",
 };
 
 const cardStylesCart = {
@@ -50,7 +52,7 @@ const OfferCreator = () => {
           <Heading as="h2" size="lg" mb="20px">
             Dane podstawowe
           </Heading>
-          <Box width="auto" ml={{ xl: "20px", lg: "10px" }} display="flex" flexWrap="wrap" justifyContent="space-between">
+          <Box width="auto" display="flex" flexWrap="wrap" justifyContent="space-between">
             <Box sx={inputWrapperStyles}>
               <FormLabel>Nazwa wydarzenia</FormLabel>
               <Input type="text" placeholder="Nazwa wydarzenia" />
@@ -82,143 +84,161 @@ const OfferCreator = () => {
           </Box>
         </Box>
         <Box display="flex" flexDirection={{ xl: "row", sm: "column" }}>
-          <Box ml="auto" mt="25px" width={{ xl: "70%", sm: "100%" }}>
+          <Box ml="auto" mt="25px" width={{ xl: "80%", sm: "100%" }}>
             <Heading as="h2" size="lg" mb="20px">
               Wybór wykonawców
             </Heading>
             <Box width="100%">
               <Input mb="25px" type="text" placeholder="Wyszukaj wykonwacę" />
-              <Box width="100%" height={{ "2xl": "auto", sm: "310px" }} overflowX="auto" display="flex" gap="20px">
+              <Box width="100%" height={{ "2xl": "375px", sm: "310px" }} overflowX="auto" display="flex" gap="20px">
                 <Card sx={cardStyles}>
-                  <CardBody>
+                  <CardBody padding="0px">
                     <Image
                       mb="10px"
                       src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
                     />
-                    <Heading mb="0px" size="md">
+                    <Heading fontSize="22px" mb="5px">
                       Wykonawca
                     </Heading>
-                    <Text mt="0px">Wokalista</Text>
-                    <Link ml="10px" color="darkblue">
-                      Link do profilu
-                    </Link>
+                    <Box ml="10px">
+                      <Text mb="-5px" fontSize="16px">
+                        Wokalista
+                      </Text>
+                      <Box textAlign="right">
+                        <Link fontSize="16px">Link do profilu</Link>
+                      </Box>
+                    </Box>
                   </CardBody>
-                  <CardFooter>
-                    <Button ml="auto">Dodaj</Button>
+                  <CardFooter padding="0px">
+                    <div className="custom-button">
+                      <Button fontSize="18px">350 zł</Button>
+                    </div>
+                  </CardFooter>
+                </Card>{" "}
+                <Card sx={cardStyles}>
+                  <CardBody padding="0px">
+                    <Image
+                      mb="10px"
+                      src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                    />
+                    <Heading fontSize="22px" mb="5px">
+                      Wykonawca
+                    </Heading>
+                    <Box ml="10px">
+                      <Text mb="-5px" fontSize="16px">
+                        Wokalista
+                      </Text>
+                      <Box textAlign="right">
+                        <Link fontSize="16px">Link do profilu</Link>
+                      </Box>
+                    </Box>
+                  </CardBody>
+                  <CardFooter padding="0px">
+                    <div className="custom-button">
+                      <Button fontSize="18px">350 zł</Button>
+                    </div>
+                  </CardFooter>
+                </Card>{" "}
+                <Card sx={cardStyles}>
+                  <CardBody padding="0px">
+                    <Image
+                      mb="10px"
+                      src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                    />
+                    <Heading fontSize="22px" mb="5px">
+                      Wykonawca
+                    </Heading>
+                    <Box ml="10px">
+                      <Text mb="-5px" fontSize="16px">
+                        Wokalista
+                      </Text>
+                      <Box textAlign="right">
+                        <Link fontSize="16px">Link do profilu</Link>
+                      </Box>
+                    </Box>
+                  </CardBody>
+                  <CardFooter padding="0px">
+                    <div className="custom-button">
+                      <Button fontSize="18px">350 zł</Button>
+                    </div>
+                  </CardFooter>
+                </Card>{" "}
+                <Card sx={cardStyles}>
+                  <CardBody padding="0px">
+                    <Image
+                      mb="10px"
+                      src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                    />
+                    <Heading fontSize="22px" mb="5px">
+                      Wykonawca
+                    </Heading>
+                    <Box ml="10px">
+                      <Text mb="-5px" fontSize="16px">
+                        Wokalista
+                      </Text>
+                      <Box textAlign="right">
+                        <Link fontSize="16px">Link do profilu</Link>
+                      </Box>
+                    </Box>
+                  </CardBody>
+                  <CardFooter padding="0px">
+                    <div className="custom-button">
+                      <Button fontSize="18px">350 zł</Button>
+                    </div>
+                  </CardFooter>
+                </Card>{" "}
+                <Card sx={cardStyles}>
+                  <CardBody padding="0px">
+                    <Image
+                      mb="10px"
+                      src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                    />
+                    <Heading fontSize="22px" mb="5px">
+                      Wykonawca
+                    </Heading>
+                    <Box ml="10px">
+                      <Text mb="-5px" fontSize="16px">
+                        Wokalista
+                      </Text>
+                      <Box textAlign="right">
+                        <Link fontSize="16px">Link do profilu</Link>
+                      </Box>
+                    </Box>
+                  </CardBody>
+                  <CardFooter padding="0px">
+                    <div className="custom-button">
+                      <Button fontSize="18px">350 zł</Button>
+                    </div>
                   </CardFooter>
                 </Card>
                 <Card sx={cardStyles}>
-                  <CardBody>
+                  <CardBody padding="0px">
                     <Image
                       mb="10px"
                       src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
                     />
-                    <Heading mb="0px" size="md">
+                    <Heading fontSize="22px" mb="5px">
                       Wykonawca
                     </Heading>
-                    <Text mt="0px">Wokalista</Text>
-                    <Link ml="10px" color="darkblue">
-                      Link do profilu
-                    </Link>
+                    <Box ml="10px">
+                      <Text mb="-5px" fontSize="16px">
+                        Wokalista
+                      </Text>
+                      <Box textAlign="right">
+                        <Link fontSize="16px">Link do profilu</Link>
+                      </Box>
+                    </Box>
                   </CardBody>
-                  <CardFooter>
-                    <Button ml="auto">Dodaj</Button>
-                  </CardFooter>
-                </Card>
-                <Card sx={cardStyles}>
-                  <CardBody>
-                    <Image
-                      mb="10px"
-                      src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                    />
-                    <Heading mb="0px" size="md">
-                      Wykonawca
-                    </Heading>
-                    <Text mt="0px">Wokalista</Text>
-                    <Link ml="10px" color="darkblue">
-                      Link do profilu
-                    </Link>
-                  </CardBody>
-                  <CardFooter>
-                    <Button ml="auto">Dodaj</Button>
-                  </CardFooter>
-                </Card>
-                <Card sx={cardStyles}>
-                  <CardBody>
-                    <Image
-                      mb="10px"
-                      src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                    />
-                    <Heading mb="0px" size="md">
-                      Wykonawca
-                    </Heading>
-                    <Text mt="0px">Wokalista</Text>
-                    <Link ml="10px" color="darkblue">
-                      Link do profilu
-                    </Link>
-                  </CardBody>
-                  <CardFooter>
-                    <Button ml="auto">Dodaj</Button>
-                  </CardFooter>
-                </Card>
-                <Card sx={cardStyles}>
-                  <CardBody>
-                    <Image
-                      mb="10px"
-                      src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                    />
-                    <Heading mb="0px" size="md">
-                      Wykonawca
-                    </Heading>
-                    <Text mt="0px">Wokalista</Text>
-                    <Link ml="10px" color="darkblue">
-                      Link do profilu
-                    </Link>
-                  </CardBody>
-                  <CardFooter>
-                    <Button ml="auto">Dodaj</Button>
-                  </CardFooter>
-                </Card>
-                <Card sx={cardStyles}>
-                  <CardBody>
-                    <Image
-                      mb="10px"
-                      src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                    />
-                    <Heading mb="0px" size="md">
-                      Wykonawca
-                    </Heading>
-                    <Text mt="0px">Wokalista</Text>
-                    <Link ml="10px" color="darkblue">
-                      Link do profilu
-                    </Link>
-                  </CardBody>
-                  <CardFooter>
-                    <Button ml="auto">Dodaj</Button>
-                  </CardFooter>
-                </Card>
-                <Card sx={cardStyles}>
-                  <CardBody>
-                    <Image
-                      mb="10px"
-                      src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                    />
-                    <Heading mb="0px" size="md">
-                      Wykonawca
-                    </Heading>
-                    <Text mt="0px">Wokalista</Text>
-                    <Link ml="10px" color="darkblue">
-                      Link do profilu
-                    </Link>
-                  </CardBody>
-                  <CardFooter>
-                    <Button ml="auto">Dodaj</Button>
+                  <CardFooter padding="0px">
+                    <div className="custom-button">
+                      <Button fontSize="18px">350 zł</Button>
+                    </div>
                   </CardFooter>
                 </Card>
               </Box>
             </Box>
           </Box>
-          <Box ml="auto" mr="auto" mt="25px" width="100%" pl={{ xl: "10px", sm: "0px" }}>
+          <Box ml="auto" mr="auto" mt="25px" width="100%" pl={{ xl: "25px", sm: "0px" }}>
             <Heading as="h2" size="lg" mb="20px">
               Koszyk wykonawców
             </Heading>
@@ -230,11 +250,6 @@ const OfferCreator = () => {
                     <Heading width="90%" as="h2" size="md" mb="5px">
                       Nazwa wykonwacy
                     </Heading>
-                    <Text ml="10px" width="100%" lineHeight="1" height="50px" overflowY="auto">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam magnam laudantium fugit numquam nulla quo, esse blanditiis iusto
-                      rerum veniam non tempora dignissimos soluta distinctio deleniti natus error. Asperiores. Lorem ipsum dolor sit amet consectetur
-                      adipisicing
-                    </Text>
                     <Text textAlign="right" fontWeight="500">
                       2000 PLN
                     </Text>
@@ -246,29 +261,6 @@ const OfferCreator = () => {
                     <Heading width="90%" as="h2" size="md" mb="5px">
                       Nazwa wykonwacy
                     </Heading>
-                    <Text ml="10px" width="100%" lineHeight="1" height="50px" overflowY="auto">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam magnam laudantium fugit numquam nulla quo, esse blanditiis iusto
-                      rerum veniam non tempora dignissimos soluta distinctio deleniti natus error. Asperiores. Lorem ipsum dolor sit amet consectetur
-                      adipisicing
-                    </Text>
-                    <Text textAlign="right" fontWeight="500">
-                      2000 PLN
-                    </Text>
-                  </CardBody>
-                </Card>
-                <Card sx={cardStylesCart}>
-                  <CardBody>
-                    <CloseButton position="absolute" right="10px" top="10px" />
-                    <Heading width="90%" as="h2" size="md" mb="5px">
-                      Nazwa wykonwacy
-                    </Heading>
-                    <Text width="100%" ml="10px" lineHeight="1" height="50px" overflowY="auto">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam magnam laudantium fugit numquam nulla quo, esse blanditiis iusto
-                      rerum veniam non tempora dignissimos soluta distinctio deleniti natus error. Asperiores. Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Molestias totam magnam laudantium fugit numquam nulla quo, esse blanditiis iusto rerum veniam non tempora dignissimos
-                      soluta distinctio deleniti natus error. Asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam magnam
-                      laudantium
-                    </Text>
                     <Text textAlign="right" fontWeight="500">
                       2000 PLN
                     </Text>
@@ -282,97 +274,139 @@ const OfferCreator = () => {
           </Box>
         </Box>
         <Box display="flex" flexDirection={{ xl: "row", sm: "column" }}>
-          <Box ml="auto" mt="25px" width={{ xl: "70%", sm: "100%" }} flexShrink="0">
+          <Box ml="auto" mt="25px" width={{ xl: "80%", sm: "100%" }} flexShrink="0">
             <Heading as="h2" size="lg" mb="20px">
               Wybór techniki
             </Heading>
-            <Input mb="25px" type="text" placeholder="Wyszukaj wykonwacę" />
+            <Input mb="25px" type="text" placeholder="Wyszukaj technikę " />
             <Box display="flex" flexDirection="column" gap="20px">
               <Card direction="row" padding="16px" backgroundColor="lightGray">
                 <Image
-                  width="300px"
-                  height="300px"
+                  width="275px"
+                  height="275px"
                   src="https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
                   alt="Caffe Latte"
-                  mt="auto"
-                  mb="auto"
+                  borderRadius="5px"
                 />
-                <Stack width="100%" height="100%">
-                  <CardBody>
-                    <Heading mb="10px" size="md">
+                <Stack width="100%" height="auto">
+                  <CardBody padding="0px 16px 16px 16px" margin="0px">
+                    <Heading mb="5px" fontSize="26px">
                       Nazwa techniki
                     </Heading>
-                    <Box display="flex" mb="20px">
-                      <Box>
-                        <Text>Producent:</Text>
-                        <Text>Model:</Text>
-                        <Text>Waga:</Text>
-                        <Text>Wymiary:</Text>
-                      </Box>
-                      <Box ml="10px">
-                        <Text>XYZ</Text>
-                        <Text>XYZ</Text>
-                        <Text>XYZ</Text>
-                        <Text>XYZ</Text>
+                    <Box ml="10px">
+                      <Text lineHeight="1.1" fontSize="20px" mb="10px">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati
+                        corporis aut similique libero possimus quod aspernatur officiis eos ducimus fuga soluta incidunt. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati corporis aut similique libero possimus quod
+                      </Text>
+                      <Box textAlign="right">
+                        <Link fontSize="16px">Wyświetl szczegółowe informacje</Link>
                       </Box>
                     </Box>
-                    <Text lineHeight="1" fontSize="20px">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati
-                      corporis aut similique libero possimus quod aspernatur officiis eos ducimus fuga soluta incidunt.
-                    </Text>
                   </CardBody>
-
-                  <CardFooter>
-                    <Button ml="auto">Dodaj</Button>
+                  <CardFooter padding="0px" mt="auto!" height="auto">
+                    <div className="custom-button">
+                      <Button fontSize="18px">2500 zł</Button>
+                    </div>
                   </CardFooter>
                 </Stack>
               </Card>
-              <Card height="auto" direction="row" padding="16px" backgroundColor="lightGray">
+              <Card direction="row" padding="16px" backgroundColor="lightGray">
                 <Image
-                  width="300px"
-                  height="300px"
+                  width="275px"
+                  height="275px"
                   src="https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
                   alt="Caffe Latte"
-                  mt="auto"
-                  mb="auto"
+                  borderRadius="5px"
                 />
-                <Stack width="100%" height="100%">
-                  <CardBody>
-                    <Heading mb="10px" size="md">
+                <Stack width="100%" height="auto">
+                  <CardBody padding="0px 16px 16px 16px" margin="0px">
+                    <Heading mb="5px" fontSize="26px">
                       Nazwa techniki
                     </Heading>
-                    <Box display="flex" mb="20px">
-                      <Box>
-                        <Text>Producent:</Text>
-                        <Text>Model:</Text>
-                        <Text>Waga:</Text>
-                        <Text>Wymiary:</Text>
-                      </Box>
-                      <Box ml="10px">
-                        <Text>XYZ</Text>
-                        <Text>XYZ</Text>
-                        <Text>XYZ</Text>
-                        <Text>XYZ</Text>
+                    <Box ml="10px">
+                      <Text lineHeight="1.1" fontSize="20px" mb="10px">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati
+                        corporis aut similique libero possimus quod aspernatur officiis eos ducimus fuga soluta incidunt. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati corporis aut similique libero possimus quod
+                      </Text>
+                      <Box textAlign="right">
+                        <Link fontSize="16px">Wyświetl szczegółowe informacje</Link>
                       </Box>
                     </Box>
-                    <Text lineHeight="1" fontSize="20px">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati
-                      corporis aut similique libero possimus quod aspernatur officiis eos ducimus fuga soluta incidunt. Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati corporis aut similique libero possimus quod
-                      aspernatur officiis eos ducimus fuga soluta incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa pariatur
-                      debitis accusantium iure beatae nemo, obcaecati corporis aut similique libero possimus quod aspernatur officiis eos ducimus fuga soluta
-                      incidunt.
-                    </Text>
                   </CardBody>
-
-                  <CardFooter>
-                    <Button ml="auto">Dodaj</Button>
+                  <CardFooter padding="0px" mt="auto!" height="auto">
+                    <div className="custom-button">
+                      <Button fontSize="18px">2500 zł</Button>
+                    </div>
+                  </CardFooter>
+                </Stack>
+              </Card>
+              <Card direction="row" padding="16px" backgroundColor="lightGray">
+                <Image
+                  width="275px"
+                  height="275px"
+                  src="https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
+                  alt="Caffe Latte"
+                  borderRadius="5px"
+                />
+                <Stack width="100%" height="auto">
+                  <CardBody padding="0px 16px 16px 16px" margin="0px">
+                    <Heading mb="5px" fontSize="26px">
+                      Nazwa techniki
+                    </Heading>
+                    <Box ml="10px">
+                      <Text lineHeight="1.1" fontSize="20px" mb="10px">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati
+                        corporis aut similique libero possimus quod aspernatur officiis eos ducimus fuga soluta incidunt. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati corporis aut similique libero possimus quod
+                      </Text>
+                      <Box textAlign="right">
+                        <Link fontSize="16px">Wyświetl szczegółowe informacje</Link>
+                      </Box>
+                    </Box>
+                  </CardBody>
+                  <CardFooter padding="0px" mt="auto!" height="auto">
+                    <div className="custom-button">
+                      <Button fontSize="18px">2500 zł</Button>
+                    </div>
+                  </CardFooter>
+                </Stack>
+              </Card>
+              <Card direction="row" padding="16px" backgroundColor="lightGray">
+                <Image
+                  width="275px"
+                  height="275px"
+                  src="https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
+                  alt="Caffe Latte"
+                  borderRadius="5px"
+                />
+                <Stack width="100%" height="auto">
+                  <CardBody padding="0px 16px 16px 16px" margin="0px">
+                    <Heading mb="5px" fontSize="26px">
+                      Nazwa techniki
+                    </Heading>
+                    <Box ml="10px">
+                      <Text lineHeight="1.1" fontSize="20px" mb="10px">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati
+                        corporis aut similique libero possimus quod aspernatur officiis eos ducimus fuga soluta incidunt. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati corporis aut similique libero possimus quod
+                      </Text>
+                      <Box textAlign="right">
+                        <Link fontSize="16px">Wyświetl szczegółowe informacje</Link>
+                      </Box>
+                    </Box>
+                  </CardBody>
+                  <CardFooter padding="0px" mt="auto!" height="auto">
+                    <div className="custom-button">
+                      <Button fontSize="18px">2500 zł</Button>
+                    </div>
                   </CardFooter>
                 </Stack>
               </Card>
             </Box>
           </Box>
-          <Box ml="auto" mr="auto" mt="25px" width="100%" pl={{ xl: "10px", sm: "0px" }}>
+          <Box ml="auto" mr="auto" mt="25px" width="100%" pl={{ xl: "25px", sm: "0px" }}>
             <Heading as="h2" size="lg" mb="20px">
               Koszyk wykonawców
             </Heading>
@@ -384,11 +418,6 @@ const OfferCreator = () => {
                     <Heading width="90%" as="h2" size="md" mb="5px">
                       Nazwa wykonwacy
                     </Heading>
-                    <Text ml="10px" width="100%" lineHeight="1" height="50px" overflowY="auto">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam magnam laudantium fugit numquam nulla quo, esse blanditiis iusto
-                      rerum veniam non tempora dignissimos soluta distinctio deleniti natus error. Asperiores. Lorem ipsum dolor sit amet consectetur
-                      adipisicing
-                    </Text>
                     <Text textAlign="right" fontWeight="500">
                       2000 PLN
                     </Text>
@@ -400,11 +429,6 @@ const OfferCreator = () => {
                     <Heading width="90%" as="h2" size="md" mb="5px">
                       Nazwa wykonwacy
                     </Heading>
-                    <Text ml="10px" width="100%" lineHeight="1" height="50px" overflowY="auto">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam magnam laudantium fugit numquam nulla quo, esse blanditiis iusto
-                      rerum veniam non tempora dignissimos soluta distinctio deleniti natus error. Asperiores. Lorem ipsum dolor sit amet consectetur
-                      adipisicing
-                    </Text>
                     <Text textAlign="right" fontWeight="500">
                       2000 PLN
                     </Text>
@@ -416,13 +440,6 @@ const OfferCreator = () => {
                     <Heading width="90%" as="h2" size="md" mb="5px">
                       Nazwa wykonwacy
                     </Heading>
-                    <Text width="100%" ml="10px" lineHeight="1" height="50px" overflowY="auto">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam magnam laudantium fugit numquam nulla quo, esse blanditiis iusto
-                      rerum veniam non tempora dignissimos soluta distinctio deleniti natus error. Asperiores. Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Molestias totam magnam laudantium fugit numquam nulla quo, esse blanditiis iusto rerum veniam non tempora dignissimos
-                      soluta distinctio deleniti natus error. Asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam magnam
-                      laudantium
-                    </Text>
                     <Text textAlign="right" fontWeight="500">
                       2000 PLN
                     </Text>
