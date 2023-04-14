@@ -22,8 +22,8 @@ import "./OfferCreator.css";
 const inputWrapperStyles = {
   width: { sm: "100%", lg: "45%", xl: "30%" },
   minW: "175px",
-  mb: "10px",
-  mt: "10px",
+  mb: "5px",
+  mt: "5px",
   ml: "5px",
   mr: "5px",
 };
@@ -54,31 +54,24 @@ const OfferCreator = () => {
           </Heading>
           <Box width="auto" display="flex" flexWrap="wrap" justifyContent="space-between">
             <Box sx={inputWrapperStyles}>
-              <FormLabel>Nazwa wydarzenia</FormLabel>
               <Input type="text" placeholder="Nazwa wydarzenia" />
             </Box>
             <Box sx={inputWrapperStyles}>
-              <FormLabel>Imię i nazwisko</FormLabel>
               <Input type="text" placeholder="Imię i nazwisko" />
             </Box>
             <Box sx={inputWrapperStyles}>
-              <FormLabel>Email</FormLabel>
               <Input type="email" placeholder="Email" />
             </Box>
             <Box sx={inputWrapperStyles}>
-              <FormLabel>Lokalizacja</FormLabel>
               <Input type="text" placeholder="Lokalizacja" />
             </Box>
             <Box sx={inputWrapperStyles}>
-              <FormLabel>Data wydarzenia</FormLabel>
               <Input type="date" placeholder="Data wydarzenia" />
             </Box>
             <Box sx={inputWrapperStyles}>
-              <FormLabel>Numer telefonu</FormLabel>
               <Input type="tel" placeholder="Numer telefonu" />
             </Box>
             <Box width="100%" mb="10px" mt="10px">
-              <FormLabel>Informacje dodatkowe</FormLabel>
               <Textarea placeholder="Informacje dodatkowe" />
             </Box>
           </Box>
@@ -282,112 +275,20 @@ const OfferCreator = () => {
             <Box display="flex" flexDirection="column" gap="20px">
               <Card direction="row" padding="16px" backgroundColor="lightGray">
                 <Image
-                  width="275px"
-                  height="275px"
+                  width={{ "2xl": "275px", xl: "225px", lg: "180px" }}
+                  height={{ "2xl": "275px", xl: "225px", lg: "180px" }}
                   src="https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
                   alt="Caffe Latte"
                   borderRadius="5px"
+                  display={{ lg: "block", sm: "none" }}
                 />
                 <Stack width="100%" height="auto">
                   <CardBody padding="0px 16px 16px 16px" margin="0px">
-                    <Heading mb="5px" fontSize="26px">
+                    <Heading mb="5px" fontSize={{ "2xl": "26px", lg: "22px" }}>
                       Nazwa techniki
                     </Heading>
                     <Box ml="10px">
-                      <Text lineHeight="1.1" fontSize="20px" mb="10px">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati
-                        corporis aut similique libero possimus quod aspernatur officiis eos ducimus fuga soluta incidunt. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati corporis aut similique libero possimus quod
-                      </Text>
-                      <Box textAlign="right">
-                        <Link fontSize="16px">Wyświetl szczegółowe informacje</Link>
-                      </Box>
-                    </Box>
-                  </CardBody>
-                  <CardFooter padding="0px" mt="auto!" height="auto">
-                    <div className="custom-button">
-                      <Button fontSize="18px">2500 zł</Button>
-                    </div>
-                  </CardFooter>
-                </Stack>
-              </Card>
-              <Card direction="row" padding="16px" backgroundColor="lightGray">
-                <Image
-                  width="275px"
-                  height="275px"
-                  src="https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
-                  alt="Caffe Latte"
-                  borderRadius="5px"
-                />
-                <Stack width="100%" height="auto">
-                  <CardBody padding="0px 16px 16px 16px" margin="0px">
-                    <Heading mb="5px" fontSize="26px">
-                      Nazwa techniki
-                    </Heading>
-                    <Box ml="10px">
-                      <Text lineHeight="1.1" fontSize="20px" mb="10px">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati
-                        corporis aut similique libero possimus quod aspernatur officiis eos ducimus fuga soluta incidunt. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati corporis aut similique libero possimus quod
-                      </Text>
-                      <Box textAlign="right">
-                        <Link fontSize="16px">Wyświetl szczegółowe informacje</Link>
-                      </Box>
-                    </Box>
-                  </CardBody>
-                  <CardFooter padding="0px" mt="auto!" height="auto">
-                    <div className="custom-button">
-                      <Button fontSize="18px">2500 zł</Button>
-                    </div>
-                  </CardFooter>
-                </Stack>
-              </Card>
-              <Card direction="row" padding="16px" backgroundColor="lightGray">
-                <Image
-                  width="275px"
-                  height="275px"
-                  src="https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
-                  alt="Caffe Latte"
-                  borderRadius="5px"
-                />
-                <Stack width="100%" height="auto">
-                  <CardBody padding="0px 16px 16px 16px" margin="0px">
-                    <Heading mb="5px" fontSize="26px">
-                      Nazwa techniki
-                    </Heading>
-                    <Box ml="10px">
-                      <Text lineHeight="1.1" fontSize="20px" mb="10px">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati
-                        corporis aut similique libero possimus quod aspernatur officiis eos ducimus fuga soluta incidunt. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati corporis aut similique libero possimus quod
-                      </Text>
-                      <Box textAlign="right">
-                        <Link fontSize="16px">Wyświetl szczegółowe informacje</Link>
-                      </Box>
-                    </Box>
-                  </CardBody>
-                  <CardFooter padding="0px" mt="auto!" height="auto">
-                    <div className="custom-button">
-                      <Button fontSize="18px">2500 zł</Button>
-                    </div>
-                  </CardFooter>
-                </Stack>
-              </Card>
-              <Card direction="row" padding="16px" backgroundColor="lightGray">
-                <Image
-                  width="275px"
-                  height="275px"
-                  src="https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
-                  alt="Caffe Latte"
-                  borderRadius="5px"
-                />
-                <Stack width="100%" height="auto">
-                  <CardBody padding="0px 16px 16px 16px" margin="0px">
-                    <Heading mb="5px" fontSize="26px">
-                      Nazwa techniki
-                    </Heading>
-                    <Box ml="10px">
-                      <Text lineHeight="1.1" fontSize="20px" mb="10px">
+                      <Text lineHeight="1.1" fontSize={{ "2xl": "20px", lg: "18px" }} mb="10px">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati
                         corporis aut similique libero possimus quod aspernatur officiis eos ducimus fuga soluta incidunt. Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati corporis aut similique libero possimus quod
@@ -449,6 +350,36 @@ const OfferCreator = () => {
               <Text pt="25px" textAlign="right" fontSize="22px">
                 Suma: 6000zł
               </Text>
+            </Box>
+          </Box>
+        </Box>
+        <Box mt="25px">
+          <Heading as="h2" size="lg" mb="20px">
+            Dodatkowe
+          </Heading>
+          <Box>
+            <Box display="flex" gap="10px" flexDirection="column">
+              <Input placeholder="Nazwa" />
+              <Textarea placeholder="Opis" />
+              <Box display="flex" gap="20px">
+                <Input placeholder="Cena" />
+                <Input placeholder="Ilość" />
+              </Box>
+            </Box>
+          </Box>
+        </Box>
+        <Box mt="25px">
+          <Heading as="h2" size="lg" mb="20px">
+            Podsumowanie
+          </Heading>
+          <Box>
+            <Text textAlign="right" fontWeight="500" fontSize="22px" mb="25px">
+              Do zapłaty: 2 000 PLN
+            </Text>
+            <Box width="100%" display="flex">
+              <Button ml="auto" fontSize="20px">
+                Utwórz
+              </Button>
             </Box>
           </Box>
         </Box>
