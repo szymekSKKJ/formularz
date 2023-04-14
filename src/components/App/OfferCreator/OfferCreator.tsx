@@ -31,7 +31,7 @@ const inputWrapperStyles = {
 const cardStyles = {
   width: { "2xl": "250px", sm: "200px" },
   height: "100%",
-  bg: "#d9d9d9",
+  bg: "#e6e6e6",
   flexShrink: "0",
   padding: "16px",
 };
@@ -39,10 +39,12 @@ const cardStyles = {
 const cardStylesCart = {
   width: "100%",
   height: "auto",
-  bg: "#d9d9d9",
+  bg: "#e6e6e6",
   flexDirection: "row",
   position: "relative",
 };
+
+//focusBorderColor="#4696d2"
 
 const OfferCreator = () => {
   return (
@@ -273,7 +275,7 @@ const OfferCreator = () => {
             </Heading>
             <Input mb="25px" type="text" placeholder="Wyszukaj technikę " />
             <Box display="flex" flexDirection="column" gap="20px">
-              <Card direction="row" padding="16px" backgroundColor="lightGray">
+              <Card direction="row" padding="16px" backgroundColor="#e6e6e6">
                 <Image
                   width={{ "2xl": "275px", xl: "225px", lg: "180px" }}
                   height={{ "2xl": "275px", xl: "225px", lg: "180px" }}

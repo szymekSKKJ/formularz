@@ -1,4 +1,26 @@
 .offer-creator {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 1000px;
+    border: solid 4px white;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+  }
+
   .custom-button {
     margin-left: auto;
     position: relative;
