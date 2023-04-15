@@ -21,6 +21,24 @@
     background: #b3b3b3;
   }
 
+  input,
+  textarea {
+    border: solid 2px rgba(40, 94, 164, 0.125);
+
+    &:hover {
+      border: solid 2px rgba(40, 94, 164, 0.33);
+    }
+
+    &:focus {
+      border: solid 2px rgba(40, 94, 164, 0.6);
+    }
+
+    &:focus-visible {
+      border: solid 2px rgba(40, 94, 164, 0.6);
+      box-shadow: none;
+    }
+  }
+
   .custom-button {
     margin-left: auto;
     position: relative;

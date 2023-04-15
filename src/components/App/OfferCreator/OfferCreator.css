@@ -18,6 +18,23 @@
 .offer-creator ::-webkit-scrollbar-thumb:hover {
   background: #b3b3b3;
 }
+.offer-creator input,
+.offer-creator textarea {
+  border: solid 2px rgba(40, 94, 164, 0.125);
+}
+.offer-creator input:hover,
+.offer-creator textarea:hover {
+  border: solid 2px rgba(40, 94, 164, 0.33);
+}
+.offer-creator input:focus,
+.offer-creator textarea:focus {
+  border: solid 2px rgba(40, 94, 164, 0.6);
+}
+.offer-creator input:focus-visible,
+.offer-creator textarea:focus-visible {
+  border: solid 2px rgba(40, 94, 164, 0.6);
+  box-shadow: none;
+}
 .offer-creator .custom-button {
   margin-left: auto;
   position: relative;

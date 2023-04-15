@@ -92,117 +92,19 @@ const OfferCreator = () => {
                       mb="10px"
                       src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
                     />
-                    <Heading fontSize="22px" mb="5px">
-                      Wykonawca
-                    </Heading>
-                    <Box ml="10px">
-                      <Text mb="-5px" fontSize="16px">
-                        Wokalista
-                      </Text>
-                      <Box textAlign="right">
-                        <Link fontSize="16px">Link do profilu</Link>
-                      </Box>
-                    </Box>
+                    <Heading fontSize="22px">Wykonawca</Heading>
+                    <Text mb="5px" fontSize="16px">
+                      Wokalista
+                    </Text>
+                    <Link fontSize="16px" color="#285ea4">
+                      Link do profilu
+                    </Link>
                   </CardBody>
                   <CardFooter padding="0px">
                     <div className="custom-button">
-                      <Button fontSize="18px">350 zł</Button>
-                    </div>
-                  </CardFooter>
-                </Card>{" "}
-                <Card sx={cardStyles}>
-                  <CardBody padding="0px">
-                    <Image
-                      mb="10px"
-                      src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                    />
-                    <Heading fontSize="22px" mb="5px">
-                      Wykonawca
-                    </Heading>
-                    <Box ml="10px">
-                      <Text mb="-5px" fontSize="16px">
-                        Wokalista
-                      </Text>
-                      <Box textAlign="right">
-                        <Link fontSize="16px">Link do profilu</Link>
-                      </Box>
-                    </Box>
-                  </CardBody>
-                  <CardFooter padding="0px">
-                    <div className="custom-button">
-                      <Button fontSize="18px">350 zł</Button>
-                    </div>
-                  </CardFooter>
-                </Card>{" "}
-                <Card sx={cardStyles}>
-                  <CardBody padding="0px">
-                    <Image
-                      mb="10px"
-                      src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                    />
-                    <Heading fontSize="22px" mb="5px">
-                      Wykonawca
-                    </Heading>
-                    <Box ml="10px">
-                      <Text mb="-5px" fontSize="16px">
-                        Wokalista
-                      </Text>
-                      <Box textAlign="right">
-                        <Link fontSize="16px">Link do profilu</Link>
-                      </Box>
-                    </Box>
-                  </CardBody>
-                  <CardFooter padding="0px">
-                    <div className="custom-button">
-                      <Button fontSize="18px">350 zł</Button>
-                    </div>
-                  </CardFooter>
-                </Card>{" "}
-                <Card sx={cardStyles}>
-                  <CardBody padding="0px">
-                    <Image
-                      mb="10px"
-                      src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                    />
-                    <Heading fontSize="22px" mb="5px">
-                      Wykonawca
-                    </Heading>
-                    <Box ml="10px">
-                      <Text mb="-5px" fontSize="16px">
-                        Wokalista
-                      </Text>
-                      <Box textAlign="right">
-                        <Link fontSize="16px">Link do profilu</Link>
-                      </Box>
-                    </Box>
-                  </CardBody>
-                  <CardFooter padding="0px">
-                    <div className="custom-button">
-                      <Button fontSize="18px">350 zł</Button>
-                    </div>
-                  </CardFooter>
-                </Card>{" "}
-                <Card sx={cardStyles}>
-                  <CardBody padding="0px">
-                    <Image
-                      mb="10px"
-                      src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                    />
-                    <Heading fontSize="22px" mb="5px">
-                      Wykonawca
-                    </Heading>
-                    <Box ml="10px">
-                      <Text mb="-5px" fontSize="16px">
-                        Wokalista
-                      </Text>
-                      <Box textAlign="right">
-                        <Link fontSize="16px">Link do profilu</Link>
-                      </Box>
-                    </Box>
-                  </CardBody>
-                  <CardFooter padding="0px">
-                    <div className="custom-button">
-                      <Button fontSize="18px">350 zł</Button>
+                      <Button fontSize="18px" backgroundColor="#edf2f7">
+                        350 zł
+                      </Button>
                     </div>
                   </CardFooter>
                 </Card>
@@ -212,21 +114,129 @@ const OfferCreator = () => {
                       mb="10px"
                       src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
                     />
-                    <Heading fontSize="22px" mb="5px">
-                      Wykonawca
-                    </Heading>
-                    <Box ml="10px">
-                      <Text mb="-5px" fontSize="16px">
-                        Wokalista
-                      </Text>
-                      <Box textAlign="right">
-                        <Link fontSize="16px">Link do profilu</Link>
-                      </Box>
-                    </Box>
+                    <Heading fontSize="22px">Wykonawca</Heading>
+                    <Text mb="5px" fontSize="16px">
+                      Wokalista
+                    </Text>
+                    <Link fontSize="16px" color="#285ea4">
+                      Link do profilu
+                    </Link>
                   </CardBody>
                   <CardFooter padding="0px">
                     <div className="custom-button">
-                      <Button fontSize="18px">350 zł</Button>
+                      <Button fontSize="18px" backgroundColor="#edf2f7">
+                        350 zł
+                      </Button>
+                    </div>
+                  </CardFooter>
+                </Card>
+                <Card sx={cardStyles}>
+                  <CardBody padding="0px">
+                    <Image
+                      mb="10px"
+                      src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                    />
+                    <Heading fontSize="22px">Wykonawca</Heading>
+                    <Text mb="5px" fontSize="16px">
+                      Wokalista
+                    </Text>
+                    <Link fontSize="16px" color="#285ea4">
+                      Link do profilu
+                    </Link>
+                  </CardBody>
+                  <CardFooter padding="0px">
+                    <div className="custom-button">
+                      <Button fontSize="18px" backgroundColor="#edf2f7">
+                        350 zł
+                      </Button>
+                    </div>
+                  </CardFooter>
+                </Card>
+                <Card sx={cardStyles}>
+                  <CardBody padding="0px">
+                    <Image
+                      mb="10px"
+                      src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                    />
+                    <Heading fontSize="22px">Wykonawca</Heading>
+                    <Text mb="5px" fontSize="16px">
+                      Wokalista
+                    </Text>
+                    <Link fontSize="16px" color="#285ea4">
+                      Link do profilu
+                    </Link>
+                  </CardBody>
+                  <CardFooter padding="0px">
+                    <div className="custom-button">
+                      <Button fontSize="18px" backgroundColor="#edf2f7">
+                        350 zł
+                      </Button>
+                    </div>
+                  </CardFooter>
+                </Card>
+                <Card sx={cardStyles}>
+                  <CardBody padding="0px">
+                    <Image
+                      mb="10px"
+                      src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                    />
+                    <Heading fontSize="22px">Wykonawca</Heading>
+                    <Text mb="5px" fontSize="16px">
+                      Wokalista
+                    </Text>
+                    <Link fontSize="16px" color="#285ea4">
+                      Link do profilu
+                    </Link>
+                  </CardBody>
+                  <CardFooter padding="0px">
+                    <div className="custom-button">
+                      <Button fontSize="18px" backgroundColor="#edf2f7">
+                        350 zł
+                      </Button>
+                    </div>
+                  </CardFooter>
+                </Card>
+                <Card sx={cardStyles}>
+                  <CardBody padding="0px">
+                    <Image
+                      mb="10px"
+                      src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                    />
+                    <Heading fontSize="22px">Wykonawca</Heading>
+                    <Text mb="5px" fontSize="16px">
+                      Wokalista
+                    </Text>
+                    <Link fontSize="16px" color="#285ea4">
+                      Link do profilu
+                    </Link>
+                  </CardBody>
+                  <CardFooter padding="0px">
+                    <div className="custom-button">
+                      <Button fontSize="18px" backgroundColor="#edf2f7">
+                        350 zł
+                      </Button>
+                    </div>
+                  </CardFooter>
+                </Card>
+                <Card sx={cardStyles}>
+                  <CardBody padding="0px">
+                    <Image
+                      mb="10px"
+                      src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                    />
+                    <Heading fontSize="22px">Wykonawca</Heading>
+                    <Text mb="5px" fontSize="16px">
+                      Wokalista
+                    </Text>
+                    <Link fontSize="16px" color="#285ea4">
+                      Link do profilu
+                    </Link>
+                  </CardBody>
+                  <CardFooter padding="0px">
+                    <div className="custom-button">
+                      <Button fontSize="18px" backgroundColor="#edf2f7">
+                        350 zł
+                      </Button>
                     </div>
                   </CardFooter>
                 </Card>
@@ -295,14 +305,18 @@ const OfferCreator = () => {
                         corporis aut similique libero possimus quod aspernatur officiis eos ducimus fuga soluta incidunt. Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Dignissimos culpa pariatur debitis accusantium iure beatae nemo, obcaecati corporis aut similique libero possimus quod
                       </Text>
-                      <Box textAlign="right">
-                        <Link fontSize="16px">Wyświetl szczegółowe informacje</Link>
+                      <Box textAlign="left">
+                        <Link fontSize="16px" color="#285ea4">
+                          Wyświetl szczegółowe informacje
+                        </Link>
                       </Box>
                     </Box>
                   </CardBody>
                   <CardFooter padding="0px" mt="auto!" height="auto">
                     <div className="custom-button">
-                      <Button fontSize="18px">2500 zł</Button>
+                      <Button fontSize="18px" backgroundColor="#edf2f7">
+                        2500 zł
+                      </Button>
                     </div>
                   </CardFooter>
                 </Stack>
@@ -379,7 +393,7 @@ const OfferCreator = () => {
               Do zapłaty: 2 000 PLN
             </Text>
             <Box width="100%" display="flex">
-              <Button ml="auto" fontSize="20px">
+              <Button ml="auto" fontSize="20px" backgroundColor="#edf2f7">
                 Utwórz
               </Button>
             </Box>
