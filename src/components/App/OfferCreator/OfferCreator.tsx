@@ -31,7 +31,7 @@ const inputWrapperStyles = {
 const cardStyles = {
   width: { "2xl": "250px", sm: "200px" },
   height: "100%",
-  bg: "#e6e6e6",
+  bg: "#e9edf1",
   flexShrink: "0",
   padding: "16px",
 };
@@ -39,7 +39,7 @@ const cardStyles = {
 const cardStylesCart = {
   width: "100%",
   height: "auto",
-  bg: "#e6e6e6",
+  bg: "#e9edf1",
   flexDirection: "row",
   position: "relative",
 };
@@ -102,7 +102,7 @@ const OfferCreator = () => {
                   </CardBody>
                   <CardFooter padding="0px">
                     <div className="custom-button">
-                      <Button fontSize="18px" backgroundColor="#edf2f7">
+                      <Button fontSize="18px" backgroundColor="white" _hover={{ backgroundColor: "white" }}>
                         350 zł
                       </Button>
                     </div>
@@ -124,7 +124,7 @@ const OfferCreator = () => {
                   </CardBody>
                   <CardFooter padding="0px">
                     <div className="custom-button">
-                      <Button fontSize="18px" backgroundColor="#edf2f7">
+                      <Button fontSize="18px" backgroundColor="white" _hover={{ backgroundColor: "white" }}>
                         350 zł
                       </Button>
                     </div>
@@ -146,7 +146,7 @@ const OfferCreator = () => {
                   </CardBody>
                   <CardFooter padding="0px">
                     <div className="custom-button">
-                      <Button fontSize="18px" backgroundColor="#edf2f7">
+                      <Button fontSize="18px" backgroundColor="white" _hover={{ backgroundColor: "white" }}>
                         350 zł
                       </Button>
                     </div>
@@ -168,7 +168,7 @@ const OfferCreator = () => {
                   </CardBody>
                   <CardFooter padding="0px">
                     <div className="custom-button">
-                      <Button fontSize="18px" backgroundColor="#edf2f7">
+                      <Button fontSize="18px" backgroundColor="white" _hover={{ backgroundColor: "white" }}>
                         350 zł
                       </Button>
                     </div>
@@ -190,7 +190,7 @@ const OfferCreator = () => {
                   </CardBody>
                   <CardFooter padding="0px">
                     <div className="custom-button">
-                      <Button fontSize="18px" backgroundColor="#edf2f7">
+                      <Button fontSize="18px" backgroundColor="white" _hover={{ backgroundColor: "white" }}>
                         350 zł
                       </Button>
                     </div>
@@ -212,7 +212,7 @@ const OfferCreator = () => {
                   </CardBody>
                   <CardFooter padding="0px">
                     <div className="custom-button">
-                      <Button fontSize="18px" backgroundColor="#edf2f7">
+                      <Button fontSize="18px" backgroundColor="white" _hover={{ backgroundColor: "white" }}>
                         350 zł
                       </Button>
                     </div>
@@ -234,7 +234,7 @@ const OfferCreator = () => {
                   </CardBody>
                   <CardFooter padding="0px">
                     <div className="custom-button">
-                      <Button fontSize="18px" backgroundColor="#edf2f7">
+                      <Button fontSize="18px" backgroundColor="white" _hover={{ backgroundColor: "white" }}>
                         350 zł
                       </Button>
                     </div>
@@ -250,7 +250,7 @@ const OfferCreator = () => {
             <Box>
               <Box width="100%" display="flex" flexDirection="column" gap="20px">
                 <Card sx={cardStylesCart}>
-                  <CardBody>
+                  <CardBody padding="12px">
                     <CloseButton position="absolute" right="10px" top="10px" />
                     <Heading width="90%" as="h2" size="md" mb="5px">
                       Nazwa wykonwacy
@@ -261,7 +261,29 @@ const OfferCreator = () => {
                   </CardBody>
                 </Card>
                 <Card sx={cardStylesCart}>
-                  <CardBody>
+                  <CardBody padding="12px">
+                    <CloseButton position="absolute" right="10px" top="10px" />
+                    <Heading width="90%" as="h2" size="md" mb="5px">
+                      Nazwa wykonwacy
+                    </Heading>
+                    <Text textAlign="right" fontWeight="500">
+                      2000 PLN
+                    </Text>
+                  </CardBody>
+                </Card>
+                <Card sx={cardStylesCart}>
+                  <CardBody padding="12px">
+                    <CloseButton position="absolute" right="10px" top="10px" />
+                    <Heading width="90%" as="h2" size="md" mb="5px">
+                      Nazwa wykonwacy
+                    </Heading>
+                    <Text textAlign="right" fontWeight="500">
+                      2000 PLN
+                    </Text>
+                  </CardBody>
+                </Card>
+                <Card sx={cardStylesCart}>
+                  <CardBody padding="12px">
                     <CloseButton position="absolute" right="10px" top="10px" />
                     <Heading width="90%" as="h2" size="md" mb="5px">
                       Nazwa wykonwacy
@@ -285,7 +307,7 @@ const OfferCreator = () => {
             </Heading>
             <Input mb="25px" type="text" placeholder="Wyszukaj technikę " />
             <Box display="flex" flexDirection="column" gap="20px">
-              <Card direction="row" padding="16px" backgroundColor="#e6e6e6">
+              <Card direction="row" padding="16px" backgroundColor="#e9edf1">
                 <Image
                   width={{ "2xl": "275px", xl: "225px", lg: "180px" }}
                   height={{ "2xl": "275px", xl: "225px", lg: "180px" }}
@@ -314,7 +336,7 @@ const OfferCreator = () => {
                   </CardBody>
                   <CardFooter padding="0px" mt="auto!" height="auto">
                     <div className="custom-button">
-                      <Button fontSize="18px" backgroundColor="#edf2f7">
+                      <Button fontSize="18px" backgroundColor="white" _hover={{ backgroundColor: "white" }}>
                         2500 zł
                       </Button>
                     </div>
@@ -330,7 +352,7 @@ const OfferCreator = () => {
             <Box>
               <Box width="100%" display="flex" flexDirection="column" gap="20px">
                 <Card sx={cardStylesCart}>
-                  <CardBody>
+                  <CardBody padding="12px">
                     <CloseButton position="absolute" right="10px" top="10px" />
                     <Heading width="90%" as="h2" size="md" mb="5px">
                       Nazwa wykonwacy
@@ -341,7 +363,7 @@ const OfferCreator = () => {
                   </CardBody>
                 </Card>
                 <Card sx={cardStylesCart}>
-                  <CardBody>
+                  <CardBody padding="12px">
                     <CloseButton position="absolute" right="10px" top="10px" />
                     <Heading width="90%" as="h2" size="md" mb="5px">
                       Nazwa wykonwacy
@@ -352,7 +374,18 @@ const OfferCreator = () => {
                   </CardBody>
                 </Card>
                 <Card sx={cardStylesCart}>
-                  <CardBody>
+                  <CardBody padding="12px">
+                    <CloseButton position="absolute" right="10px" top="10px" />
+                    <Heading width="90%" as="h2" size="md" mb="5px">
+                      Nazwa wykonwacy
+                    </Heading>
+                    <Text textAlign="right" fontWeight="500">
+                      2000 PLN
+                    </Text>
+                  </CardBody>
+                </Card>
+                <Card sx={cardStylesCart}>
+                  <CardBody padding="12px">
                     <CloseButton position="absolute" right="10px" top="10px" />
                     <Heading width="90%" as="h2" size="md" mb="5px">
                       Nazwa wykonwacy
