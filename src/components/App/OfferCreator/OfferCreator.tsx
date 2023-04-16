@@ -1,23 +1,6 @@
-import {
-  Heading,
-  Box,
-  Input,
-  FormLabel,
-  Textarea,
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Text,
-  Image,
-  Stack,
-  Link,
-  Button,
-  CloseButton,
-  extendTheme,
-  StackDivider,
-} from "@chakra-ui/react";
+import { Heading, Box, Input, Textarea, Card, CardBody, CardFooter, Text, Image, Stack, Link, Button, CloseButton } from "@chakra-ui/react";
 import "./OfferCreator.css";
+import { useState } from "react";
 
 const inputWrapperStyles = {
   width: { sm: "100%", lg: "45%", xl: "30%" },
@@ -44,13 +27,88 @@ const cardStylesCart = {
   position: "relative",
 };
 
-//focusBorderColor="#4696d2"
+const generateId = () => Math.random().toString(16).slice(2);
+
+const isEmpty = (str: string) => !str.trim().length;
+
+const validateBasicInformationSection = (inputElements: HTMLInputElement[]): boolean => {
+  const inputElementsInBasicInformationElement = inputElements.filter((inputElement) => inputElement.closest(".basic-information"));
+
+  const foundEmptyInputInformationElement = inputElementsInBasicInformationElement.find((inputElement) => isEmpty(inputElement.value));
+
+  if (foundEmptyInputInformationElement !== undefined) {
+    foundEmptyInputInformationElement.focus();
+    return false;
+  } else {
+    return true;
+  }
+};
+
+const validateAdditionalsSection = (inputElements: HTMLInputElement[], isFromAddButton: boolean): boolean => {
+  const inputElementsInAdditionalsElement = inputElements.filter((inputElement) => inputElement.closest(".additionals"));
+
+  const foundEmptyInputInAdditionalsElement = inputElementsInAdditionalsElement.find((inputElement) => isEmpty(inputElement.value));
+
+  if (isFromAddButton) {
+    if (foundEmptyInputInAdditionalsElement !== undefined) {
+      foundEmptyInputInAdditionalsElement.focus();
+      return false;
+    } else {
+      return true;
+    }
+  } else {
+    if (foundEmptyInputInAdditionalsElement !== undefined && foundEmptyInputInAdditionalsElement.placeholder === "Nazwa") {
+      return true;
+    } else {
+      if (foundEmptyInputInAdditionalsElement !== undefined) {
+        foundEmptyInputInAdditionalsElement.focus();
+        return false;
+      } else {
+        return true;
+      }
+    }
+  }
+};
+
+const formValidation = (clickedButton: HTMLButtonElement, isFromAddButton: boolean): boolean => {
+  const offerCreatorElement = clickedButton.closest(".offer-creator") as HTMLFormElement;
+  const inputElements = [...offerCreatorElement.elements].filter((formElement) => formElement.tagName === "INPUT") as HTMLInputElement[];
+
+  const isBasicInformationSectionCorrect = validateBasicInformationSection(inputElements);
+
+  if (isBasicInformationSectionCorrect) {
+    const isBasicAdditionalsSectionCorrect = validateAdditionalsSection(inputElements, isFromAddButton);
+
+    if (isBasicAdditionalsSectionCorrect) {
+      return true;
+    }
+    return false;
+  } else {
+    return false;
+  }
+};
 
 const OfferCreator = () => {
+  const [additionalsElements, setAdditionalsElements] = useState([
+    {
+      id: generateId(),
+      element: (
+        <Box display="flex" gap="10px" flexDirection="column" key={generateId()}>
+          <Input placeholder="Nazwa" />
+          <Textarea placeholder="Opis" />
+          <Box display="flex" gap="20px">
+            <Input placeholder="Cena" />
+            <Input placeholder="Ilość" />
+          </Box>
+        </Box>
+      ),
+    },
+  ]);
+
   return (
-    <div className="offer-creator">
+    <form className="offer-creator">
       <Box pl={{ "3xl": "50px", "2xl": "25px", sm: "10px" }} pr={{ "3xl": "50px", "2xl": "25px", sm: "10px" }}>
-        <Box ml="auto" mr="auto" mt="25px" bg="transparent">
+        <Box ml="auto" mr="auto" mt="25px" bg="transparent" className="basic-information">
           <Heading as="h2" size="lg" mb="20px">
             Dane podstawowe
           </Heading>
@@ -347,7 +405,7 @@ const OfferCreator = () => {
           </Box>
           <Box ml="auto" mr="auto" mt="25px" width="100%" pl={{ xl: "25px", sm: "0px" }}>
             <Heading as="h2" size="lg" mb="20px">
-              Koszyk wykonawców
+              Koszyk technik
             </Heading>
             <Box>
               <Box width="100%" display="flex" flexDirection="column" gap="20px">
@@ -402,19 +460,55 @@ const OfferCreator = () => {
             </Box>
           </Box>
         </Box>
-        <Box mt="25px">
+        <Box mt="25px" className="additionals">
           <Heading as="h2" size="lg" mb="20px">
             Dodatkowe
           </Heading>
-          <Box>
-            <Box display="flex" gap="10px" flexDirection="column">
-              <Input placeholder="Nazwa" />
-              <Textarea placeholder="Opis" />
-              <Box display="flex" gap="20px">
-                <Input placeholder="Cena" />
-                <Input placeholder="Ilość" />
-              </Box>
-            </Box>
+          <Box display="flex" flexDir="column" gap="50px">
+            {additionalsElements.map((elementObject) => elementObject.element)}
+          </Box>
+          <Box width="100%" display="flex" justifyContent="center" mt="32px">
+            <Button
+              fontSize="16px"
+              backgroundColor="#e9edf1"
+              onClick={(event) => {
+                if (formValidation(event.currentTarget, true)) {
+                  setAdditionalsElements((currentValue) => {
+                    const generatedId = generateId();
+
+                    return [
+                      ...currentValue,
+                      {
+                        id: generatedId,
+                        element: (
+                          <Box display="flex" gap="10px" flexDirection="column" key={generateId()}>
+                            <CloseButton
+                              ml="auto"
+                              onClick={() => {
+                                setAdditionalsElements((currentValue) => {
+                                  const indexOfElementToRemove = currentValue.findIndex((object) => object.id === generatedId);
+
+                                  currentValue.splice(indexOfElementToRemove, 1);
+
+                                  return [...currentValue];
+                                });
+                              }}
+                            />
+                            <Input placeholder="Nazwa" />
+                            <Textarea placeholder="Opis" />
+                            <Box display="flex" gap="20px">
+                              <Input placeholder="Cena" />
+                              <Input placeholder="Ilość" />
+                            </Box>
+                          </Box>
+                        ),
+                      },
+                    ];
+                  });
+                }
+              }}>
+              Dodaj pozycję
+            </Button>
           </Box>
         </Box>
         <Box mt="25px">
@@ -426,14 +520,14 @@ const OfferCreator = () => {
               Do zapłaty: 2 000 PLN
             </Text>
             <Box width="100%" display="flex">
-              <Button ml="auto" fontSize="20px" backgroundColor="#edf2f7">
+              <Button ml="auto" fontSize="20px" backgroundColor="#e9edf1" onClick={(event) => formValidation(event.currentTarget, false)}>
                 Utwórz
               </Button>
             </Box>
           </Box>
         </Box>
       </Box>
-    </div>
+    </form>
   );
 };
 
